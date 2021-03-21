@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "Trickster";
+    src: local("Trickster"),     
+    url(~assets/Trickster/Trickster-Reg.ttf) format("truetype");
+}
+
+.display-font {
+    font-family: Trickster;
+}
