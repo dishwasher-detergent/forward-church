@@ -1,12 +1,22 @@
 <template>
-  <div id="wrapper" class="min-h-screen pb-48 bg-gray-50 relative">
-    <Nav />
+  <div id="wrapper" class="min-h-screen pb-96 bg-gray-50 relative md:pb-48">
+    <Nav v-if="!isMobile()" />
+    <MobileNav v-else />
     <Nuxt />
     <Footer />
   </div>
 </template>
 <script>
 export default {
+  methods: {
+    isMobile() {
+      if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        return true
+      } else {
+        return false
+      }
+    }
+  }
 }
 </script>
 <style>
