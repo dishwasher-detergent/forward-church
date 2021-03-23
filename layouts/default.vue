@@ -1,5 +1,5 @@
 <template>
-  <div id="wrapper" class="min-h-screen pb-96 bg-gray-50 relative md:pb-48">
+  <div id="wrapper" class="min-h-screen pb-96 bg-gray-50 relative md:pb-60">
     <Nav v-if="!isMobile()" />
     <MobileNav v-else />
     <Nuxt />

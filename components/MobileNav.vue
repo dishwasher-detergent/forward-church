@@ -43,15 +43,17 @@
           />
         </svg>
       </button>
-      <ul class="w-full p-5 absolute left-0 top-16 h-auto bg-white text-gray-900 text-lg space-y-2" :class="{ 'block': isActive, 'hidden': !isActive }">
-        <li>Home</li>
-        <li>LIVESTREAM</li>
-        <li>Media</li>
-        <li>Our Community</li>
-        <li>Give</li>
-        <li>Contact</li>
-      </ul>
     </div>
+    <transition name="drop">
+      <ul v-if="isActive" class="w-full mt-5 py-2 h-60 bg-white text-gray-900 text-lg rounded shadow-lg ring-2 ring-gray-100">
+        <li class="w-full"><a class="w-full px-5 py-1 block">Home</a></li>
+        <li class="w-full"><a class="w-full px-5 py-1 block" href="https://forwardchurchokc.online.church/" target="_blank">LIVESTREAM</a></li>
+        <li class="w-full"><a class="w-full px-5 py-1 block">Media</a></li>
+        <li class="w-full"><a class="w-full px-5 py-1 block">Our Community</a></li>
+        <li class="w-full"><a class="w-full px-5 py-1 block">Give</a></li>
+        <li class="w-full"><a class="w-full px-5 py-1 block">Contact</a></li>
+      </ul>
+    </transition>  
   </div>
 </template>
 <script>
@@ -92,5 +94,16 @@ export default {
 <style>
 #nav {
   transition: all 0.25s !important;
+}
+
+.drop-enter-active,
+.drop-leave-active {
+  transition: opacity .5s, height .24s;
+}
+
+.drop-enter,
+.drop-leave-to{
+  height: 20px;
+  opacity: 0;
 }
 </style>
