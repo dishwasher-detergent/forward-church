@@ -76,5 +76,6 @@ export default {
 <style>
 #nav {
     transition: all .25s !important;
+    z-index: 99999;
 }
 </style>

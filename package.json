@@ -10,6 +10,7 @@
     "test:e2e": "wdio wdio.conf.js"
   },
   "dependencies": {
+    "@egjs/vue-flicking": "^3.7.0",
     "core-js": "^3.9.1",
     "nuxt": "^2.15.3"
   },

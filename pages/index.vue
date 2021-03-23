@@ -2,8 +2,10 @@
   <div class="h-full">
    <Landing />
    <Message />
+   <Upcoming />
    <Location />
    <Team />
+   <Give />
   </div>
 </template>
 
