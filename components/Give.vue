@@ -63,7 +63,8 @@ export default {
   methods: {
     onScroll() {
       let message = document.getElementById("give");
-      if (window.pageYOffset >= message.offsetTop/2) {
+      if (window.pageYOffset >= message.offsetTop/1.5) {
+        console.log('give')
         this.showBG = true;
         this.showText = true;
       }
