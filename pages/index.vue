@@ -6,6 +6,7 @@
    <Location />
    <Team />
    <Give />
+   <Notification />
   </div>
 </template>
 
