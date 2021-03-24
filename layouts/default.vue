@@ -20,6 +20,14 @@ export default {
 }
 </script>
 <style>
+.h-112 {
+  height: 28rem;
+}
+
+.h-128 {
+  height: 32rem;
+}
+
 html {
   font-family: 'DM Sans', sans-serif;
   font-size: 16px;

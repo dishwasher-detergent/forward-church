@@ -1,8 +1,10 @@
 <template>
 <div class="relative h-screen w-full overflow-hidden" :class="{'hero-bg': !isMobile()}">
-    <div class="absolute top-0 z-10 w-full h-full bg-gray-900 bg-opacity-80 flex flex-col items-center justify-center text-white">
-        <h1 class="text-5xl display-font md:text-9xl">Welcome Home</h1>
-        <h2 class="text-lg text-center mt-2 md:text-xl">People Helping People Know The <span class="display-font">REAL JESUS</span></h2>
+    <div class="absolute top-0 z-10 w-full h-full bg-gray-900 bg-opacity-80 text-white">
+        <div id="hero-text" class="absolute w-full text-center" :style="top">
+            <h1 class="text-5xl display-font md:text-9xl">Welcome Home</h1>
+            <h2 class="text-lg text-center mt-2 md:text-xl">People Helping People Know The <span class="display-font">REAL JESUS</span></h2>
+        </div>
     </div>
     <div class="overflow-hidden w-full h-full">
         <video v-if="isMobile()" id="vid"  preload="auto" autoplay="autoplay" loop="loop" muted="muted">
@@ -18,6 +20,21 @@
 </template>
 <script>
 export default {
+    data() {
+        return {
+        top: '',
+        lastScrollPosition: 0,
+        scrollValue: 0,
+        };
+    },
+    mounted() {
+        this.lastScrollPosition = window.pageYOffset;
+        window.addEventListener("scroll", this.onScroll);
+    },
+
+    beforeDestroy() {
+        window.removeEventListener("scroll", this.onScroll);
+    },
     methods: {
         isMobile() {
             if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
@@ -25,12 +42,32 @@ export default {
             } else {
                 return true
             }
-        }
+        },
+        onScroll() {
+            let amount = (window.innerHeight/2) - (window.pageYOffset/2)
+            this.top = 'top:' + amount + 'px'
+        },
     }
 }
 </script>
-
 <style>
+
+.slide-enter-active,
+.slide-leave-active {
+  transition: all .5s;
+}
+
+.slide-enter {
+    transform: translate(-100%,0);
+    /* opacity: 0; */
+}
+
+#hero-text {
+    top: 50%;
+    transform: translateY(-50%);
+    
+}
+
 #next {
   animation-name: bounce;
   animation-duration: 2s;

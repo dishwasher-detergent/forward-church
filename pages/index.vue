@@ -1,8 +1,8 @@
 <template>
   <div class="h-full">
    <Landing />
-   <Message />
    <Upcoming />
+   <Message />
    <Location />
    <Team />
    <Give />
