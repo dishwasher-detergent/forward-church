@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full overflow-hidden relative">
+  <div class="w-full overflow-hidden relative bg-gray-200 ">
     <div class="max-w-5xl mx-auto my-10 px-5 md:px-0">
       <h1 class="text-5xl display-font mt-5">Meet the Team</h1>
       <div
