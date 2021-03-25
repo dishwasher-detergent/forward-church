@@ -1,6 +1,6 @@
 <template>
   <div class="w-full bg-gray-900">
-    <div class="max-w-5xl mx-auto p-5 md:px-0">
+    <div class="max-w-5xl mx-auto p-5 lg:px-0">
       <h1 class="mb-5 text-2xl display-font text-white">Upcoming Events</h1>
       <div class="p-5 bg-white bg-opacity-10 rounded">
         <flicking

@@ -1,7 +1,7 @@
 <template>
   <div
     id="message"
-    class="px-5 max-w-5xl mx-auto text-gray-900 -mt-24 mb-24 text-xl md:px-0"
+    class="px-5 max-w-5xl mx-auto text-gray-900 -mt-24 mb-24 text-xl lg:px-0"
   >
         <div>
             <h1 class="text-5xl text-left mb-10 display-font">

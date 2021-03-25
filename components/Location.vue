@@ -1,17 +1,17 @@
 <template>
-  <div id="location" class="w-full overflow-hidden relative h-128">
+  <div id="location" class="w-full overflow-hidden relative h-128 lg:mt-48">
     <!-- Content -->
     <transition name="slide-right">
       <div
         v-if="showText"
-        class=" relative max-w-7xl h-full mx-auto flex flex-row items-center justify-end px-5 overflow-hidden md:px-0 z-10"
+        class=" relative max-w-7xl h-full mx-auto flex flex-row items-center justify-end px-5 overflow-hidden lg:px-0 z-10"
       >
-        <div class="w-full md:w-3/5">
-          <h1 class="text-5xl display-font mt-5 text-gray-900 md:-ml-10">
+        <div class="w-full lg:w-3/5">
+          <h1 class="text-5xl display-font mt-5 text-gray-900 lg:-ml-10">
             Join Us Every Sunday
           </h1>
           <div
-            class="rounded bg-gray-800 my-5 flex flex-col justify-center text-white md:flex-row md:m-10"
+            class="rounded bg-gray-800 my-5 flex flex-col justify-center text-white lg:flex-row lg:m-10"
           >
             <div class="flex flex-row p-10">
               <div class="w-10 h-10">
@@ -69,7 +69,7 @@
         v-if="showBG"
         class="w-4/5 h-full absolute left-0 top-0 rounded-tr-full bg-red-400"
       >
-        <div class="h-full w-1/2 hidden absolute left-0 md:block">
+        <div class="h-full w-1/2 hidden absolute left-0 lg:block">
           <div
             class="absolute top-0 left-0 w-full h-full bg-gradient-to-l to-transparent from-red-400"
           ></div>

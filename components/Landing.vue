@@ -2,8 +2,8 @@
 <div class="relative h-screen w-full overflow-hidden" :class="{'hero-bg': !isMobile()}">
     <div class="absolute top-0 z-10 w-full h-full bg-gray-900 bg-opacity-80 text-white">
         <div id="hero-text" class="absolute w-full text-center" :style="top">
-            <h1 class="text-5xl display-font md:text-9xl">Welcome Home</h1>
-            <h2 class="text-lg text-center mt-2 md:text-xl">People Helping People Know The <span class="display-font">REAL JESUS</span></h2>
+            <h1 class="text-5xl display-font lg:text-9xl">Welcome Home</h1>
+            <h2 class="text-lg text-center mt-2 lg:text-xl">People Helping People Know The <span class="display-font">REAL JESUS</span></h2>
         </div>
     </div>
     <div class="overflow-hidden w-full h-full">

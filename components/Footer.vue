@@ -1,10 +1,10 @@
 <template>
-  <div class="w-full h-96 md:h-60 bg-black absolute bottom-0 text-gray-50">
-    <div class="max-w-5xl mx-auto p-5 flex flex-col justify-between space-y-4 md:flex-row md:space-y-0">
+  <div class="w-full h-96 lg:h-60 bg-black absolute bottom-0 text-gray-50">
+    <div class="max-w-5xl mx-auto p-5 flex flex-col justify-between space-y-4 lg:flex-row lg:space-y-0">
       <!-- SOCIAL -->
       <div>
         <h4 class="font-bold text-lg">Find Us Here</h4>
-        <ul class="flex flex-row  space-x-2 md:flex-col md:space-x-0">
+        <ul class="flex flex-row  space-x-2 lg:flex-col lg:space-x-0">
           <li>Facebook</li>
           <li>Twitter</li>
           <li>Instagram</li>
@@ -16,7 +16,7 @@
         <h4 class="font-bold text-lg">Worship With Us</h4>
         <div class="flex flex-col">
           <div
-            class="flex flex-row pb-3 md:pb-0"
+            class="flex flex-row pb-3 lg:pb-0"
           >
             <div class="w-5 h-5">
               <svg
@@ -58,7 +58,7 @@
       <!-- Pages -->
       <div>
         <h4 class="font-bold text-lg">Pages</h4>
-        <ul class="grid grid-cols-2 md:grid-cols-1">
+        <ul class="grid grid-cols-2 lg:grid-cols-1">
           <li>Home</li>
           <li>LIVESTREAM</li>
           <li>Media</li>
