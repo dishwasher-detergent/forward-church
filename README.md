@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/944b6353-5eba-44dc-9bd5-12d00be099ca/deploy-status)](https://app.netlify.com/sites/cocky-torvalds-0f47ea/deploys)
+
 # fwdchurch
 
 ## Build Setup
