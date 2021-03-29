@@ -11,7 +11,9 @@
   },
   "dependencies": {
     "@egjs/vue-flicking": "^3.7.0",
+    "@nuxtjs/dotenv": "^1.4.1",
     "core-js": "^3.9.1",
+    "dotenv": "^8.2.0",
     "nuxt": "^2.15.3"
   },
   "devDependencies": {
